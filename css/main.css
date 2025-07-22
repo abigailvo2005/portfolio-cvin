@@ -352,9 +352,9 @@ h6 {
   color: #fff;
 }
 
-h1.hero-big {
-  font-size: 2.4rem;
-  line-height: 3rem;
+h1.hero-big span {
+  font-size: 1.5rem  !important;
+  line-height: 2rem !important;
   font-weight: 500;
 }
 
@@ -2904,4 +2904,5 @@ form .site-btn {
     font-size: 1rem;
   }
 }
+
 
