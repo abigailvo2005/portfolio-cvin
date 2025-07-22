@@ -88,9 +88,14 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 profile-pic">
                       <div
                         class="image clip-animation from-left"
-                        style="background-image: url(https://kmkbevsvcbsgmjpkcaye.supabase.co/storage/v1/object/public/portfolio-img//face.png)"
+                        style="
+                          background-image: url(https://kmkbevsvcbsgmjpkcaye.supabase.co/storage/v1/object/public/portfolio-img//face.png);
+                        "
                       >
-                        <img src="https://kmkbevsvcbsgmjpkcaye.supabase.co/storage/v1/object/public/portfolio-img//face.png" alt="" />
+                        <img
+                          src="https://kmkbevsvcbsgmjpkcaye.supabase.co/storage/v1/object/public/portfolio-img//face.png"
+                          alt=""
+                        />
                       </div>
                       <div class="social-links clip-animation">
                         <ul>
@@ -118,7 +123,7 @@
                         I'm Văn Chí Vĩnh<br />
                         I am a<span
                           class="element"
-                          data-values=" backend-focused software engineer.,  microservices system builder., performance-driven developer.,  clean-code enthusiast., scalable systems developer., Java & Node.js expert."
+                          data-values=" backend-focused software engineer.,  microservices system builder., performance-driven developer.,  clean-code enthusiast., scalable systems developer."
                           data-loop="true"
                           data-backdelay="2"
                         ></span>
@@ -269,7 +274,6 @@
                 >
                   <div class="spacer-45"></div>
                   <h5 class="underline-title">Professional Achievements</h5>
-                  <div class="spacer-60"></div>
 
                   <div class="stats-grid">
                     <!-- Years of Experience -->
@@ -309,9 +313,7 @@
 
                 <!-- Technical Expertise -->
                 <section class="tech-showcase scale-animation" data-delay="1.7">
-                  <div class="spacer-45"></div>
                   <h5 class="underline-title">Technical Stack</h5>
-                  <div class="spacer-60"></div>
 
                   <div class="tech-categories">
                     <!-- Programming Languages -->
@@ -422,16 +424,81 @@
                   <div class="spacer-60"></div>
                 </section>
 
-                <!-- clients -->
+                <!-- tools showcase -->
                 <div class="client-slider">
                   <ul class="bxslider">
-                    <li><img src="images/clients/client-1d.png" alt="" /></li>
-                    <li><img src="images/clients/client-2d.png" alt="" /></li>
-                    <li><img src="images/clients/client-3d.png" alt="" /></li>
-                    <li><img src="images/clients/client-4d.png" alt="" /></li>
-                    <li><img src="images/clients/client-5d.png" alt="" /></li>
-                    <li><img src="images/clients/client-6d.png" alt="" /></li>
-                    <li><img src="images/clients/client-7d.png" alt="" /></li>
+                    <li>
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                        alt="Java"
+                        title="Java"
+                        width="60"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+                        alt="Spring Boot"
+                        title="Spring Boot"
+                        width="60"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                        alt="Node.js"
+                        title="Node.js"
+                        width="60"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                        alt="PostgreSQL"
+                        title="PostgreSQL"
+                        width="60"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                        alt="Docker"
+                        title="Docker"
+                        width="60"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                        alt="GitHub"
+                        title="GitHub"
+                        width="60"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"
+                        alt="Redis"
+                        title="Redis"
+                        width="60"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                        alt="MongoDB"
+                        title="MongoDB"
+                        width="60"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg"
+                        alt="Jenkins"
+                        title="Jenkins"
+                        width="60"
+                      />
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -482,8 +549,8 @@
       document.addEventListener("DOMContentLoaded", function () {
         // Intersection Observer for stats animation
         const observerOptions = {
-          threshold: 0.1,
-          rootMargin: "0px 0px 50px 0px", // Trigger earlier
+          threshold: 0.05, // Trigger when 5% of the element is visible
+          rootMargin: "0px 0px 250px 0px", // Trigger earlier
         };
 
         const observer = new IntersectionObserver((entries) => {
